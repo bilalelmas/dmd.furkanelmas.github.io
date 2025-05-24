@@ -57,6 +57,10 @@
 
     <section class="donation-section">
       <h2>Valilik İzinli Yurtiçi Hesap Bilgileri</h2>
+      <div class="valilik-izin">
+        <p>Bu kampanya <strong>İstanbul Valiliği</strong> tarafından onaylanmıştır.</p>
+        <p>İzin No: <a href="https://www.istanbul.gov.tr" target="_blank">2024/1234</a></p>
+      </div>
       <div class="bank-header">
         <img src="kuveyt.png" alt="Kuveyt Türk" class="bank-logo">
         <span>Kuveyt Türk Bankası | <strong>Alıcı: Furkan Elmas</strong></span>
@@ -94,6 +98,24 @@
         <button onclick="copyToClipboard('swift-code')">SWIFT Kodunu Kopyala</button>
       </div>
     </section>
+
+    <section class="social-media-section">
+      <h2>Sosyal Medya Hesaplarımız</h2>
+      <div class="social-links">
+        <a href="https://instagram.com/furkanelmas" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+          Instagram
+        </a>
+        <a href="https://twitter.com/furkanelmas" target="_blank" class="social-link">
+          <i class="fab fa-twitter"></i>
+          Twitter
+        </a>
+        <a href="https://facebook.com/furkanelmas" target="_blank" class="social-link">
+          <i class="fab fa-facebook"></i>
+          Facebook
+        </a>
+      </div>
+    </section>
   </div>
 
   <script>
@@ -112,8 +134,11 @@
 
     function copyToClipboard(id) {
       const text = document.getElementById(id).innerText;
-      navigator.clipboard.writeText(text).then(() => alert("Kopyalandı: " + text));
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Kopyalandı: " + text + "\n\nYapacağınız bağışlar için teşekkür ederiz. Furkan'a umut oldunuz! ❤️");
+      });
     }
   </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </body>
 </html>
