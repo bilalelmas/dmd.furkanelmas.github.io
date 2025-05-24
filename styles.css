@@ -99,11 +99,37 @@ body {
   padding: 24px 18px 18px 18px;
 }
 
+.donation-section h2 {
+  text-align: center;
+  color: #1a365d;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.donation-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #3182ce;
+  border-radius: 2px;
+}
+
 .bank-header {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(26,54,93,0.07);
 }
 
 .bank-logo {
@@ -118,52 +144,57 @@ body {
 .iban-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  margin-bottom: 18px;
-}
-
-.iban-tl {
-  border: 2.5px solid #3182ce;
-  background: linear-gradient(90deg, #e3eafc 60%, #fff 100%);
-  box-shadow: 0 4px 16px rgba(49,130,206,0.10);
-}
-.iban-tl h3 {
-  font-size: 1.18rem;
-  font-weight: 700;
-  color: #17408b;
-}
-.iban-tl p {
-  font-size: 1.18rem;
-  font-weight: 700;
-  color: #17408b;
-  letter-spacing: 1.2px;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
 .iban-box {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(26,54,93,0.07);
-  padding: 16px 18px;
-  flex: 1 1 180px;
-  min-width: 180px;
-  max-width: 220px;
+  padding: 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.iban-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26,54,93,0.12);
+}
+
+.iban-tl {
+  border-left: 4px solid #3182ce;
+  background: linear-gradient(90deg, #e3eafc 0%, #fff 100%);
 }
 
 .iban-box h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.05rem;
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
   color: #1a365d;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iban-box h3::before {
+  content: '💳';
+  font-size: 1.2rem;
 }
 
 .iban-box p {
   font-family: 'Montserrat', monospace;
-  font-size: 1.08rem;
-  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+  margin: 0 0 16px 0;
   color: #2d3748;
   word-break: break-all;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .iban-box button {
@@ -171,27 +202,43 @@ body {
   color: #fff;
   border: none;
   border-radius: 6px;
-  padding: 7px 16px;
-  font-size: 0.98rem;
+  padding: 10px 20px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s;
   box-shadow: 0 1px 4px rgba(49,130,206,0.08);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iban-box button::before {
+  content: '📋';
+  font-size: 1.1rem;
 }
 
 .iban-box button:hover {
   background: #225ea8;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(49,130,206,0.15);
 }
 
 .swift-box {
-  margin-top: 10px;
+  margin-top: 16px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(26,54,93,0.07);
-  padding: 14px 18px;
+  padding: 20px;
   display: flex;
   align-items: center;
   gap: 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.swift-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26,54,93,0.12);
 }
 
 .swift-box h3 {
