@@ -249,12 +249,11 @@ body {
   user-select: all;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
+  text-align: center;
 }
 
 .iban-box p::before {
-  content: 'IBAN: ';
-  color: #718096;
-  font-weight: 500;
+  content: none;
 }
 
 .iban-tl p {
@@ -445,6 +444,8 @@ body {
     font-size: 0.95rem;
     padding: 10px;
     letter-spacing: 0.3px;
+    white-space: normal;
+    word-break: break-all;
   }
   .iban-box button {
     width: 100%;
