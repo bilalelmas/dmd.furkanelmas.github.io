@@ -1,77 +1,119 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Furkan'a Umut Ol</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      padding: 20px;
-      max-width: 700px;
-      margin: auto;
-      color: #333;
-    }
-    h1 {
-      color: #c0392b;
-    }
-    .iban-box {
-      background: #fff;
-      border: 1px solid #ccc;
-      padding: 15px;
-      margin-top: 20px;
-      border-radius: 5px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .iban {
-      font-size: 18px;
-      font-weight: bold;
-    }
-    button {
-      padding: 8px 12px;
-      background-color: #27ae60;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #1e8449;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMD Kas Hastası Furkan Elmas'a Umut Ol</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="container">
+    <img src="furkan.jpg" alt="Furkan Elmas" class="profile-pic">
+    <h1 class="main-title">DMD Kas Hastası Furkan Elmas'a Umut Ol</h1>
 
-  <h1>Merhaba, ben Furkan</h1>
-  <p>
-    Ben DMD (Duchenne Musküler Distrofi) kas hastasıyım.  
-    Bu nadir ve ilerleyici hastalık nedeniyle zamanla kaslarım zayıflıyor ve tedavi süreci oldukça zor ve maliyetli.
-  </p>
-  <p>
-    Tedavim ve daha iyi bir yaşam için desteğinize ihtiyacım var.  
-    Yardımlarınız, umut olmam ve hayatla daha güçlü bağ kurmam için çok değerli.
-  </p>
-  <p>
-    Aşağıda yer alan IBAN bilgilerinden bana destek olabilirsiniz.  
-    Her katkınız benim için çok kıymetli. Paylaşarak daha fazla kişiye ulaşmamıza yardımcı olabilirsiniz.
-  </p>
+    <section class="section">
+      <button class="accordion">DMD Nedir?</button>
+      <div class="panel">
+        <p>
+          Duchenne Musküler Distrofi (DMD), çoğunlukla erkek çocuklarda görülen genetik, ilerleyici ve ölümcül bir kas hastalığıdır.
+          Bu hastalıkta, kasların onarımı ve gücü için gerekli olan "distrofin" proteini ya hiç üretilemez ya da hatalı üretilir.
+          Sonuç olarak kaslar zamanla zayıflar ve görevlerini yerine getiremez hâle gelir.
+          Belirtiler genellikle 2-5 yaş arasında ortaya çıkar. Çocuklar yürümekte, koşmakta ve merdiven çıkmakta zorlanmaya başlar.
+          İlerleyen yıllarda kas erimesi hızlanır, tekerlekli sandalyeye bağımlılık ve solunum ile kalp kaslarının etkilenmesi görülür.
+          Genellikle genç yaşta hayati organların işlev kaybı nedeniyle kayıplar yaşanabilir.
+          DMD yıllarca çaresiz bir hastalık olarak bilinse de, son yıllarda gen terapisiyle büyük bir umut doğdu.
+          Bu yeni tedavi yöntemi, kasların korunmasına yardımcı oluyor ve hastalığın ilerleyişini yavaşlatabiliyor.
+          Bazı ülkelerde uygulanmaya başlanan bu yöntemle artık DMD'li çocuklar için daha güçlü bir gelecek mümkün.
+          <strong>Unutmayın:</strong> DMD zamanla yarışılan bir hastalıktır. Erken tanı ve destek, çocukların yaşam süresi ve kalitesini artırabilir.
+          Furkan ve diğer nice çocuğun gülüşü için birlikte başarabiliriz.
+        </p>
+      </div>
 
-  <div class="iban-box">
-    <span class="iban" id="iban">TR00 0000 0000 0000 0000 0000 00</span>
-    <button onclick="copyIBAN()">Kopyala</button>
+      <button class="accordion">Furkan'ın DMD ile Yaşam Savaşı</button>
+      <div class="panel">
+        <p>
+          Ben Furkan.<br>
+          3 aylıkken soğuk algınlığı şikayetiyle gittiğim hastanede yapılan kan tahlilinde ALT, AST ve CK değerlerimin yüksek olduğunu öğrendik.
+          6 aylıkken yapılan genetik kan testi sonucunda ilerleyici ve ölümcül bir kas hastalığı olan DMD (Duchenne Musküler Distrofi) teşhisi aldım.<br><br>
+          Teşhis sonrasında yaşam kalitemi arttırmak için beslenme düzenime dikkat ettik, fizik tedavi ve yüzme ile tedavimi destekledik.
+          Çünkü kaslarıma ve eklemlerime iyi gelen tek şey bunlardı.<br><br>
+          2023 yılının Haziran ayında DMD için geliştirilen <strong>Elevidys</strong> adlı Gen tedavisi FDA tarafından onaylandı.
+          Ancak bu tedavinin maliyeti oldukça yüksek. Bu yüzden sizlerin desteklerinize ve yardımınıza ihtiyacım var.<br><br>
+          Sizlerin desteğiyle Gen tedavisine ulaşarak diğer çocuklar gibi yürümeye devam edebilirim.<br>
+          Bu zorlu savaşımda beni yalnız bırakmayın. Sizlere ihtiyacım var.
+        </p>
+      </div>
+
+      <button class="accordion">Tedavisi Var mı?</button>
+      <div class="panel">
+        <p>
+          Duchenne Musküler Distrofi (DMD) için son yıllarda büyük bir umut doğdu. 2023 yılında FDA tarafından onaylanan gen terapisi Elevidys,
+          DMD tedavisinde devrim niteliğinde bir gelişme oldu. Bu tedavi, vücuda eksik olan "mikro-distrofin" genini taşıyan bir virüs aracılığıyla
+          uygulanıyor. Böylece kas dokusu korunabiliyor ve hastalığın ilerleyişi yavaşlatılabiliyor. Şu anda ABD'de uygulanmaya başlanan bu tedavi,
+          hastalığın seyrini değiştirebilecek güçlü bir seçenek sunuyor. Ancak oldukça maliyetli olduğu için aileler bağış kampanyaları ile destek arıyor.
+        </p>
+      </div>
+    </section>
+
+    <section class="donation-section">
+      <h2>Valilik İzinli Yurtiçi Hesap Bilgileri</h2>
+      <div class="bank-header">
+        <img src="kuveytturk-logo.png" alt="Kuveyt Türk" class="bank-logo">
+        <span>Kuveyt Türk Bankası | <strong>Alıcı: Furkan Elmas</strong></span>
+      </div>
+      <div class="iban-list">
+        <div class="iban-box">
+          <h3>TL IBAN</h3>
+          <p id="iban-tl">TRXX XXXX XXXX XXXX XXXX XXXX XX</p>
+          <button onclick="copyToClipboard('iban-tl')">IBAN'ı Kopyala</button>
+        </div>
+        <div class="iban-box">
+          <h3>USD IBAN</h3>
+          <p id="iban-usd">TRXX XXXX XXXX XXXX XXXX XXXX XX</p>
+          <button onclick="copyToClipboard('iban-usd')">IBAN'ı Kopyala</button>
+        </div>
+        <div class="iban-box">
+          <h3>EUR IBAN</h3>
+          <p id="iban-eur">TRXX XXXX XXXX XXXX XXXX XXXX XX</p>
+          <button onclick="copyToClipboard('iban-eur')">IBAN'ı Kopyala</button>
+        </div>
+        <div class="iban-box">
+          <h3>GBP IBAN</h3>
+          <p id="iban-gbp">TRXX XXXX XXXX XXXX XXXX XXXX XX</p>
+          <button onclick="copyToClipboard('iban-gbp')">IBAN'ı Kopyala</button>
+        </div>
+        <div class="iban-box">
+          <h3>CHF IBAN</h3>
+          <p id="iban-chf">TRXX XXXX XXXX XXXX XXXX XXXX XX</p>
+          <button onclick="copyToClipboard('iban-chf')">IBAN'ı Kopyala</button>
+        </div>
+      </div>
+      <div class="swift-box">
+        <h3>SWIFT Kodu</h3>
+        <p id="swift-code">KTEFTRIS</p>
+        <button onclick="copyToClipboard('swift-code')">SWIFT Kodunu Kopyala</button>
+      </div>
+    </section>
   </div>
 
   <script>
-    function copyIBAN() {
-      const ibanText = document.getElementById("iban").innerText;
-      navigator.clipboard.writeText(ibanText).then(() => {
-        alert("IBAN kopyalandı!");
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
       });
     }
-  </script>
 
+    function copyToClipboard(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => alert("Kopyalandı: " + text));
+    }
+  </script>
 </body>
 </html>
