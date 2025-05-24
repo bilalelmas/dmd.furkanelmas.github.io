@@ -469,11 +469,12 @@ body {
     padding: 16px;
   }
   .iban-box p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     padding: 10px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
     white-space: normal;
     word-break: break-all;
+    overflow-x: visible;
   }
   .iban-box button {
     width: 100%;
