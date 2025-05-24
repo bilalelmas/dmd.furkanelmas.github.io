@@ -117,9 +117,26 @@ body {
 
 .iban-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  flex-direction: column;
+  gap: 14px;
   margin-bottom: 18px;
+}
+
+.iban-tl {
+  border: 2.5px solid #3182ce;
+  background: linear-gradient(90deg, #e3eafc 60%, #fff 100%);
+  box-shadow: 0 4px 16px rgba(49,130,206,0.10);
+}
+.iban-tl h3 {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #17408b;
+}
+.iban-tl p {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #17408b;
+  letter-spacing: 1.2px;
 }
 
 .iban-box {
