@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Furkan'a Umut Ol</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      color: #333;
+    }
+    h1 {
+      color: #c0392b;
+    }
+    .iban-box {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .iban {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    button {
+      padding: 8px 12px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1e8449;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Merhaba, ben Furkan</h1>
+  <p>
+    Ben DMD (Duchenne Musküler Distrofi) kas hastasıyım.  
+    Bu nadir ve ilerleyici hastalık nedeniyle zamanla kaslarım zayıflıyor ve tedavi süreci oldukça zor ve maliyetli.
+  </p>
+  <p>
+    Tedavim ve daha iyi bir yaşam için desteğinize ihtiyacım var.  
+    Yardımlarınız, umut olmam ve hayatla daha güçlü bağ kurmam için çok değerli.
+  </p>
+  <p>
+    Aşağıda yer alan IBAN bilgilerinden bana destek olabilirsiniz.  
+    Her katkınız benim için çok kıymetli. Paylaşarak daha fazla kişiye ulaşmamıza yardımcı olabilirsiniz.
+  </p>
+
+  <div class="iban-box">
+    <span class="iban" id="iban">TR00 0000 0000 0000 0000 0000 00</span>
+    <button onclick="copyIBAN()">Kopyala</button>
+  </div>
+
+  <script>
+    function copyIBAN() {
+      const ibanText = document.getElementById("iban").innerText;
+      navigator.clipboard.writeText(ibanText).then(() => {
+        alert("IBAN kopyalandı!");
+      });
+    }
+  </script>
+
+</body>
+</html>
