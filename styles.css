@@ -232,13 +232,17 @@ body {
   font-size: 1.1rem;
   margin: 0 0 16px 0;
   color: #2d3748;
-  word-break: break-all;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow-x: auto;
   background: #f8fafc;
   padding: 12px;
   border-radius: 6px;
   width: 100%;
   box-sizing: border-box;
   letter-spacing: 0.5px;
+  -webkit-user-select: all;
+  user-select: all;
 }
 
 .iban-tl p {
@@ -420,5 +424,9 @@ body {
     max-width: 100%;
     min-width: 0;
     width: 100%;
+  }
+  .iban-box p {
+    font-size: 1rem;
+    padding: 10px;
   }
 } 
